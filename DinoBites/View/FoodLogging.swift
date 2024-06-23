@@ -128,6 +128,14 @@ struct FoodLogging: View {
                         }
                     }
                     .padding(.leading, 20)
+
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                        FoodCardView(name: "Ayam Teriyaki")
+                        FoodCardView(name: "Ayam Teriyaki")
+                        FoodCardView(name: "Ayam Teriyaki")
+                        FoodCardView(name: "Ayam Teriyaki")
+                    }
+                    .padding(.horizontal, 20)
                 }
                 .frame(maxWidth: .infinity)
             }

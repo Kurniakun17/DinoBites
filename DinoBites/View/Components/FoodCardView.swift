@@ -10,14 +10,14 @@ import SwiftUI
 struct FoodCardView: View {
     var name: String
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
             RoundedRectangle(cornerRadius: 12)
                 .frame(width: 143, height: 106)
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.subheadline)
                     .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
+//                    .multilineTextAlignment(.leading)
 
                 HStack {
                     Circle()
@@ -32,23 +32,25 @@ struct FoodCardView: View {
                     .fontWeight(.bold)
                     .font(.caption)
                     .foregroundStyle(.gray)
-                Button(action: {}) {
-                    Image(systemName: "plus")
-                        .font(.system(size: 14))
-                        .foregroundStyle(.prime)
-                        .padding(4)
-                        .background(.purplefade)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
+
+                VStack(alignment: .trailing) {
+                    Button(action: {}) {
+                        Image(systemName: "plus")
+                            .font(.system(size: 14))
+                            .foregroundStyle(.prime)
+                            .padding(4)
+                            .background(.purplefade)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
                 }
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(0)
-            .background(.gray.opacity(0.1))
         }
 
-        // MARK: Change this into max width infinity
+        // MARK: Change this into max width infinityv
 
-        .frame(maxWidth: 140)
         .padding(12)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(.gray, lineWidth: 1))
     }
