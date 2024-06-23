@@ -7,12 +7,9 @@
 
 import SwiftUI
 
-struct ChipViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    ChipViewModel()
+class ChipViewModel: ObservableObject {
+    @Published var ChipList = [ChipModel(isSelected: true, name: "Rekomendasi"),
+                               ChipModel(isSelected: false, name: "Makanan Berat"),
+                               ChipModel(isSelected: false, name: "Makanan Ringan"),
+                               ChipModel(isSelected: false, name: "Cemilan")]
 }

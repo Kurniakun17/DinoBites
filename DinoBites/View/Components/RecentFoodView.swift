@@ -59,5 +59,5 @@ struct RecentFoodView: View {
 }
 
 #Preview {
-    FoodCardView()
+    RecentFoodView()
 }

@@ -15,9 +15,9 @@ struct FilterChip: View {
         Button(action: { isSelected.toggle() }) {
             Text(name)
                 .padding(.horizontal, 16)
-                .padding(.vertical, 4)
-                .background(isSelected ? .semigray : .pink)
-                .foregroundStyle(isSelected ? .gray : .white)
+                .padding(.vertical, 8)
+                .background(isSelected ? .pink : .semigray)
+                .foregroundStyle(isSelected ? .white : .gray)
                 .transition(.identity)
         }
         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -27,4 +27,3 @@ struct FilterChip: View {
 #Preview {
     FilterChip(isSelected: false, name: "Jajanan")
 }
-

@@ -10,8 +10,8 @@ import SwiftUI
 struct FoodLogging: View {
     @Environment(\.presentationMode) var presentationMode
     @State var selectedFilter = []
-    
-    
+    @ObservedObject var viewModel = ChipViewModel()
+
     var body: some View {
         VStack(spacing: 0) {
             // Display Food Data
@@ -82,15 +82,15 @@ struct FoodLogging: View {
                 )
 
             ScrollView(.vertical) {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 16) {
                     VStack(alignment: .leading) {
                         Text("Makan yang ini lagi gak?")
                             .fontWeight(.bold)
                         ScrollView(.horizontal) {
                             HStack {
-                                FoodCardView()
-                                FoodCardView()
-                                FoodCardView()
+                                RecentFoodView()
+                                RecentFoodView()
+                                RecentFoodView()
                             }
                         }
                     }
@@ -118,6 +118,15 @@ struct FoodLogging: View {
                         .padding(.trailing, 20)
                     }
                     .frame(maxWidth: .infinity)
+                    .padding(.leading, 20)
+
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(viewModel.ChipList) {
+                                chip in FilterChip(isSelected: chip.isSelected, name: chip.name)
+                            }
+                        }
+                    }
                     .padding(.leading, 20)
                 }
                 .frame(maxWidth: .infinity)
