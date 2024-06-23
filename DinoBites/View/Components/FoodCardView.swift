@@ -9,6 +9,12 @@ import SwiftUI
 
 struct FoodCardView: View {
     var name: String
+    var calorie: Int
+    var sugar: Float
+    var salt: Float
+    var fat: Float
+    var addFood: () -> Void
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             RoundedRectangle(cornerRadius: 12)
@@ -17,13 +23,12 @@ struct FoodCardView: View {
                 Text(name)
                     .font(.subheadline)
                     .fontWeight(.bold)
-//                    .multilineTextAlignment(.leading)
 
-                HStack {
+                HStack(spacing: 4) {
                     Circle()
                         .fill(.green)
                         .frame(width: 8, height: 8)
-                    Text("70 cal")
+                    Text(String(calorie) + " kcal")
                         .fontWeight(.bold)
                         .font(.caption)
                 }
@@ -34,7 +39,7 @@ struct FoodCardView: View {
                     .foregroundStyle(.gray)
 
                 VStack(alignment: .trailing) {
-                    Button(action: {}) {
+                    Button(action: addFood) {
                         Image(systemName: "plus")
                             .font(.system(size: 14))
                             .foregroundStyle(.prime)
@@ -52,10 +57,10 @@ struct FoodCardView: View {
         // MARK: Change this into max width infinityv
 
         .padding(12)
-        .overlay(RoundedRectangle(cornerRadius: 12).stroke(.gray, lineWidth: 1))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(.gray, lineWidth: 0.5))
     }
 }
 
 #Preview {
-    FoodCardView(name: "Ayam Teriyaki")
+    FoodCardView(name: "Satay", calorie: 200, sugar: 3.0, salt: 1.5, fat: 15.0, addFood: {})
 }

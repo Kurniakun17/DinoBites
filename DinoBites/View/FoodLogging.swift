@@ -9,53 +9,58 @@ import SwiftUI
 
 struct FoodLogging: View {
     @Environment(\.presentationMode) var presentationMode
-    @State var selectedFilter = []
-    @ObservedObject var viewModel = ChipViewModel()
+    @ObservedObject var viewModel = FoodLogViewModel()
+    @State var filter = "Rekomendasi"
+    @State var selectedFood: [FoodModel] = []
+    @State var characterMood = ""
+    @State var isCooldownActive = false
+    @State var calorieCount = 0
+
+    func updateCharacter() {
+        if calorieCount > 500 {
+            characterMood = "_overcal"
+            return
+        }
+
+        if !isCooldownActive {
+            print("hai")
+            characterMood = "_love"
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                isCooldownActive = false
+                if calorieCount < 500 {
+                    characterMood = ""
+                }
+            }
+        }
+
+        isCooldownActive = true
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             // Display Food Data
             VStack(spacing: 24) {
-                HStack(alignment: .top) {
-                    Image("character")
-                        .resizable()
-                        .frame(width: 120, height: 132)
-                        .offset(x: 50)
-                    VStack(spacing: 0) {
-                        HStack {
-                            Text("Feed Me!")
-                                .font(.footnote)
-                                .fontWeight(.bold)
-                        }
-                        .padding(14)
-                        .frame(width: 100)
-                        .background(.gray)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .offset(x: 40, y: -20)
+                CharacterLogView(mood: $characterMood)
+                    .offset(x: -20)
 
-                        Rectangle()
-                            .fill(.gray)
-                            .rotationEffect(.degrees(55))
-                            .frame(width: 20, height: 20)
-                            .offset(x: 10, y: -34)
-                    }
-                }
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Vikri's Plate (0 item)")
+                        Text("Vikri's Plate (\(String(selectedFood.count)) item)")
                             .font(.caption)
                             .fontWeight(.semibold)
                         HStack {
                             Circle()
-                                .fill(.green)
+                                .fill(calorieCount < 500 ? .green : .red)
                                 .frame(width: 20, height: 20)
 
-                            Text("0 kcal")
+                            Text(String(calorieCount) + " kcal")
                                 .fontWeight(.bold)
                         }
                     }
                     Spacer()
-                    NavigationLink {} label: {
+                    NavigationLink {
+                        FoodReview(selectedFood: $selectedFood, calorieCount: calorieCount)
+                    } label: {
                         Text("Review")
                             .foregroundStyle(.white)
                             .fontWeight(.bold)
@@ -70,6 +75,7 @@ struct FoodLogging: View {
             .padding(.horizontal, 20)
             .background(.purplefade)
 
+            // Rounded bottom
             VStack {}
                 .frame(maxWidth: .infinity)
                 .padding(10)
@@ -88,9 +94,20 @@ struct FoodLogging: View {
                             .fontWeight(.bold)
                         ScrollView(.horizontal) {
                             HStack {
-                                RecentFoodView()
-                                RecentFoodView()
-                                RecentFoodView()
+                                ForEach(viewModel.recentFood) {
+                                    food in RecentFoodView(
+                                        name: food.name,
+                                        calorie: food.calorie,
+                                        sugar: food.sugar,
+                                        salt: food.salt,
+                                        fat: food.fat,
+                                        addFood: {
+                                            selectedFood.append(food)
+                                            calorieCount += food.calorie
+                                            updateCharacter()
+                                        }
+                                    )
+                                }
                             }
                         }
                     }
@@ -123,17 +140,31 @@ struct FoodLogging: View {
                     ScrollView(.horizontal) {
                         HStack {
                             ForEach(viewModel.ChipList) {
-                                chip in FilterChip(isSelected: chip.isSelected, name: chip.name)
+                                chip in FilterChip(
+                                    filter: filter,
+                                    name: chip.name,
+                                    onTap: {
+                                        filter = chip.name
+                                    }
+                                )
                             }
                         }
                     }
                     .padding(.leading, 20)
 
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                        FoodCardView(name: "Ayam Teriyaki")
-                        FoodCardView(name: "Ayam Teriyaki")
-                        FoodCardView(name: "Ayam Teriyaki")
-                        FoodCardView(name: "Ayam Teriyaki")
+                        ForEach(viewModel.indonesianDishes) {
+                            food in FoodCardView(name: food.name,
+                                                 calorie: food.calorie,
+                                                 sugar: food.sugar,
+                                                 salt: food.salt,
+                                                 fat: food.fat,
+                                                 addFood: {
+                                                     selectedFood.append(food)
+                                                     calorieCount += food.calorie
+                                                     updateCharacter()
+                                                 })
+                        }
                     }
                     .padding(.horizontal, 20)
                 }

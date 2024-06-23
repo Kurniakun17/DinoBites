@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct FilterChip: View {
-    @State var isSelected: Bool
+    var filter: String
     var name: String
+    var onTap: () -> Void
 
     var body: some View {
-        Button(action: { isSelected.toggle() }) {
+        Button(action: { onTap() }) {
             Text(name)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 8)
-                .background(isSelected ? .pink : .semigray)
-                .foregroundStyle(isSelected ? .white : .gray)
+                .background(filter == name ? .pink : .semigray)
+                .foregroundStyle(filter == name ? .white : .gray)
                 .transition(.identity)
         }
         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -25,5 +26,5 @@ struct FilterChip: View {
 }
 
 #Preview {
-    FilterChip(isSelected: false, name: "Jajanan")
+    FilterChip(filter: "Jajanan", name: "Jajanan", onTap: {})
 }
