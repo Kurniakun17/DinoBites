@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20B41A892C283CB70042CE18 /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B41A882C283CB70042CE18 /* SeedData.swift */; };
+		20B41A8C2C283D130042CE18 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B41A8B2C283D130042CE18 /* FoodModel.swift */; };
 		F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E02C2442150089F204 /* DinoBitesApp.swift */; };
 		F6C207E32C2442150089F204 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E22C2442150089F204 /* MainView.swift */; };
 		F6C207E52C2442170089F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E42C2442170089F204 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20B41A882C283CB70042CE18 /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
+		20B41A8B2C283D130042CE18 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		F6C207DD2C2442150089F204 /* DinoBites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoBites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C207E02C2442150089F204 /* DinoBitesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBitesApp.swift; sourceTree = "<group>"; };
 		F6C207E22C2442150089F204 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20B41A872C283CA80042CE18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				20B41A882C283CB70042CE18 /* SeedData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		F6C207D42C2442150089F204 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 		F6C207DF2C2442150089F204 /* DinoBites */ = {
 			isa = PBXGroup;
 			children = (
+				20B41A872C283CA80042CE18 /* Utilities */,
 				F6C207FE2C27BC320089F204 /* ViewModel */,
 				F6C207F32C25CFEB0089F204 /* View */,
 				F6C207EE2C250E420089F204 /* Model */,
@@ -91,6 +104,7 @@
 			children = (
 				F6C207EF2C250E580089F204 /* FoodList.swift */,
 				F6C207FA2C27B5FA0089F204 /* ChipModel.swift */,
+				20B41A8B2C283D130042CE18 /* FoodModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,11 +210,13 @@
 				F6C207F02C250E580089F204 /* FoodList.swift in Sources */,
 				F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */,
 				F6C207E32C2442150089F204 /* MainView.swift in Sources */,
+				20B41A8C2C283D130042CE18 /* FoodModel.swift in Sources */,
 				F6C207F22C25264F0089F204 /* Home.swift in Sources */,
 				F6C208012C27BF110089F204 /* ChipViewModel.swift in Sources */,
 				F6C207F52C25D01F0089F204 /* FoodLogging.swift in Sources */,
 				F6C207FD2C27B71D0089F204 /* FilterChip.swift in Sources */,
 				F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */,
+				20B41A892C283CB70042CE18 /* SeedData.swift in Sources */,
 				F6C208062C27C09C0089F204 /* FoodCardView.swift in Sources */,
 				F6C207FB2C27B5FA0089F204 /* ChipModel.swift in Sources */,
 			);
