@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3CB3082C2A5866005A69AA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3CB3072C2A5865005A69AA /* Profile.swift */; };
 		F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E02C2442150089F204 /* DinoBitesApp.swift */; };
 		F6C207E32C2442150089F204 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E22C2442150089F204 /* MainView.swift */; };
 		F6C207E52C2442170089F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E42C2442170089F204 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3CB3072C2A5865005A69AA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F6C207DD2C2442150089F204 /* DinoBites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoBites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C207E02C2442150089F204 /* DinoBitesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBitesApp.swift; sourceTree = "<group>"; };
 		F6C207E22C2442150089F204 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F6C207F12C25264F0089F204 /* Home.swift */,
 				F6C207F42C25D01F0089F204 /* FoodLogging.swift */,
 				F6C779F12C28488A007DE87E /* FoodReview.swift */,
+				3B3CB3072C2A5865005A69AA /* Profile.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				F6C207F02C250E580089F204 /* FoodModel.swift in Sources */,
 				F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */,
 				F6C207E32C2442150089F204 /* MainView.swift in Sources */,
+				3B3CB3082C2A5866005A69AA /* Profile.swift in Sources */,
 				F6C207F22C25264F0089F204 /* Home.swift in Sources */,
 				F6C208012C27BF110089F204 /* FoodLogViewModel.swift in Sources */,
 				F6C779F22C28488A007DE87E /* FoodReview.swift in Sources */,
@@ -352,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
