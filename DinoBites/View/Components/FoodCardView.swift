@@ -9,10 +9,10 @@ import SwiftUI
 
 struct FoodCardView: View {
     var name: String
-    var calorie: Int
-    var sugar: Float
-    var salt: Float
-    var fat: Float
+    var calorie: Double
+    var sugar: Double
+    var salt: Double
+    var fat: Double
     var addFood: () -> Void
 
     var body: some View {
