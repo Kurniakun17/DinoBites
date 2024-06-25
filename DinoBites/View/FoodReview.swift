@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FoodReview: View {
     @Environment(\.presentationMode) var presentationMode
-    @Binding var selectedFood: [FoodModel]
-    @State var calorieCount: Int
+    @Binding var selectedFood: [FoodItem]
+    @State var calorieCount: Double
     var listItem = ["test", "hai"]
 
     var body: some View {
@@ -66,7 +66,7 @@ struct FoodReview: View {
                         }
 
                         Spacer()
-                        
+
                         Button(action: {
                             print(index)
                             selectedFood.remove(at: index)
@@ -110,7 +110,5 @@ struct FoodReview: View {
 
 #Preview {
     FoodReview(selectedFood: .constant([
-        FoodModel(id: 1, name: "Nasi Goreng", calorie: 350, sugar: 5.0, salt: 2.0, fat: 10.0),
-        FoodModel(id: 2, name: "Satay", calorie: 200, sugar: 3.0, salt: 1.5, fat: 15.0)
     ]), calorieCount: 499)
 }
