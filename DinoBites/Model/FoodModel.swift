@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 class FoodItem: Identifiable {
-    var id: UUID
+    var id: Int
     var name: String
     var calorie: Double
     var sugar: Double
@@ -21,7 +21,7 @@ class FoodItem: Identifiable {
     var imgName: String
     var type: String
 
-    init(id: UUID, name: String, calorie: Double, sugar: Double, salt: Double, fat: Double, portion: Double, units: String, imgName: String, type: String) {
+    init(id: Int, name: String, calorie: Double, sugar: Double, salt: Double, fat: Double, portion: Double, units: String, imgName: String, type: String) {
         self.id = id
         self.name = name
         self.calorie = calorie

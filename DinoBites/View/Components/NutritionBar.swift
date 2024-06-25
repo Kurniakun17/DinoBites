@@ -20,32 +20,33 @@ struct NutritionBar: View {
             let waveProgress = CGFloat(percentage) / 100
 
             ZStack {
-                if percentage >= 120 {
+                if percentage <= 20 || percentage >= 120 {
                     HStack {}
                         .frame(width: 60, height: 60)
-                        .background(.redSoft.opacity(0.4))
+                        .background(percentage <= 20 ? .orangeSoft.opacity(0.4) : .redSoft.opacity(0.4))
                         .clipShape(Circle())
-                        .scaleEffect(isAnimating ? 1.4 : 0)
+                        .scaleEffect(isAnimating ? 1.5 : 0)
                         .onAppear {
-                            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
+                            withAnimation(.spring(duration: 1.5).repeatForever(autoreverses: true)) {
                                 isAnimating.toggle()
                             }
                         }
 
-                    HStack {}
-                        .frame(width: 60, height: 60)
-                        .background(.redSoft.opacity(0.2))
-                        .clipShape(Circle())
-                        .scaleEffect(isAnimating ? 1.7 : 0)
+//                    HStack {}
+//                        .frame(width: 60, height: 60)
+//                        .background(percentage <= 20 ? .orangeSoft.opacity(0.2) : .redSoft.opacity(0.2))
+//                        .clipShape(Circle())
+//                        .scaleEffect(isAnimating ? 1.7 : 0)
                 }
 
                 Circle()
+                    .stroke(percentage < 120 ? .orangeSoft : .redSoft, lineWidth: 16)
                     .fill(percentage >= 120 ? .redSoft : .semigray)
                     .frame(width: 60, height: 60)
 
                 if percentage < 120 {
-                    Wave(progress: waveProgress, waveHeight: 3, phase: phase)
-                        .fill(percentage < 80 ? .orange: .green)
+                    Wave(progress: waveProgress > 99 ? 99 : 100, waveHeight: 3, phase: phase)
+                        .fill(percentage < 120 ? .orangeSoft.opacity(0.7) : .redSoft.opacity(0.7))
                         .frame(width: 70, height: 60)
                         .clipShape(Circle())
                 }

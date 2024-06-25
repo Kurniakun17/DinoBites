@@ -5,6 +5,7 @@
 //  Created by Kurnia Kharisma Agung Samiadjie on 20/06/24.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct DinoBitesApp: App {
         WindowGroup {
             MainView()
         }
+        .modelContainer(for: FoodItem.self)
     }
 }

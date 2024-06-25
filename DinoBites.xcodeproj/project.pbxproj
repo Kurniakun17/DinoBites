@@ -80,6 +80,23 @@
 			path = Metal;
 			sourceTree = "<group>";
 		};
+		F63FCAE82C2A8EEE00AF879E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F6C207F12C25264F0089F204 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F63FCAE92C2A8EFF00AF879E /* FoodLogging */ = {
+			isa = PBXGroup;
+			children = (
+				F6C779F12C28488A007DE87E /* FoodReview.swift */,
+				F6C207F42C25D01F0089F204 /* FoodLogging.swift */,
+			);
+			path = FoodLogging;
+			sourceTree = "<group>";
+		};
 		F6C207D42C2442150089F204 = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +149,9 @@
 		F6C207F32C25CFEB0089F204 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F63FCAE92C2A8EFF00AF879E /* FoodLogging */,
+				F63FCAE82C2A8EEE00AF879E /* Home */,
 				F6C208042C27BFE70089F204 /* Components */,
-				F6C207F12C25264F0089F204 /* Home.swift */,
-				F6C207F42C25D01F0089F204 /* FoodLogging.swift */,
-				F6C779F12C28488A007DE87E /* FoodReview.swift */,
 				F63FCAE22C2A616900AF879E /* Test_Shader.swift */,
 			);
 			path = View;

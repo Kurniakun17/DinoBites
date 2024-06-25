@@ -16,12 +16,13 @@ struct FilterChip: View {
         Button(action: { onTap() }) {
             Text(name)
                 .padding(.horizontal, 16)
-                .padding(.vertical, 8)
-                .background(filter == name ? .pink : .semigray)
+                .padding(.vertical, 12)
+                .background(filter == name ? .prime : .semigray)
+                .fontWeight(.bold)
                 .foregroundStyle(filter == name ? .white : .gray)
                 .transition(.identity)
         }
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 
