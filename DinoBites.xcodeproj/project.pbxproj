@@ -13,14 +13,16 @@
 		F6C207E32C2442150089F204 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E22C2442150089F204 /* MainView.swift */; };
 		F6C207E52C2442170089F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E42C2442170089F204 /* Assets.xcassets */; };
 		F6C207E82C2442170089F204 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E72C2442170089F204 /* Preview Assets.xcassets */; };
-		F6C207F02C250E580089F204 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207EF2C250E580089F204 /* FoodList.swift */; };
+		F6C207F02C250E580089F204 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207EF2C250E580089F204 /* FoodModel.swift */; };
 		F6C207F22C25264F0089F204 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207F12C25264F0089F204 /* Home.swift */; };
 		F6C207F52C25D01F0089F204 /* FoodLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207F42C25D01F0089F204 /* FoodLogging.swift */; };
 		F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207F82C25EB160089F204 /* RecentFoodView.swift */; };
 		F6C207FB2C27B5FA0089F204 /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207FA2C27B5FA0089F204 /* ChipModel.swift */; };
 		F6C207FD2C27B71D0089F204 /* FilterChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207FC2C27B71D0089F204 /* FilterChip.swift */; };
-		F6C208012C27BF110089F204 /* ChipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208002C27BF110089F204 /* ChipViewModel.swift */; };
+		F6C208012C27BF110089F204 /* FoodLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208002C27BF110089F204 /* FoodLogViewModel.swift */; };
 		F6C208062C27C09C0089F204 /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208052C27C09C0089F204 /* FoodCardView.swift */; };
+		F6C208082C2819C50089F204 /* CharacterLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208072C2819C50089F204 /* CharacterLogView.swift */; };
+		F6C779F22C28488A007DE87E /* FoodReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C779F12C28488A007DE87E /* FoodReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +33,16 @@
 		F6C207E22C2442150089F204 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F6C207E42C2442170089F204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6C207E72C2442170089F204 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F6C207EF2C250E580089F204 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		F6C207EF2C250E580089F204 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		F6C207F12C25264F0089F204 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F6C207F42C25D01F0089F204 /* FoodLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogging.swift; sourceTree = "<group>"; };
 		F6C207F82C25EB160089F204 /* RecentFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentFoodView.swift; sourceTree = "<group>"; };
 		F6C207FA2C27B5FA0089F204 /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
 		F6C207FC2C27B71D0089F204 /* FilterChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChip.swift; sourceTree = "<group>"; };
-		F6C208002C27BF110089F204 /* ChipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipViewModel.swift; sourceTree = "<group>"; };
+		F6C208002C27BF110089F204 /* FoodLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogViewModel.swift; sourceTree = "<group>"; };
 		F6C208052C27C09C0089F204 /* FoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
+		F6C208072C2819C50089F204 /* CharacterLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLogView.swift; sourceTree = "<group>"; };
+		F6C779F12C28488A007DE87E /* FoodReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,7 @@
 		F6C207EE2C250E420089F204 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F6C207EF2C250E580089F204 /* FoodList.swift */,
+				F6C207EF2C250E580089F204 /* FoodModel.swift */,
 				F6C207FA2C27B5FA0089F204 /* ChipModel.swift */,
 				20B41A8B2C283D130042CE18 /* FoodModel.swift */,
 			);
@@ -115,6 +119,7 @@
 				F6C208042C27BFE70089F204 /* Components */,
 				F6C207F12C25264F0089F204 /* Home.swift */,
 				F6C207F42C25D01F0089F204 /* FoodLogging.swift */,
+				F6C779F12C28488A007DE87E /* FoodReview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,7 +127,7 @@
 		F6C207FE2C27BC320089F204 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F6C208002C27BF110089F204 /* ChipViewModel.swift */,
+				F6C208002C27BF110089F204 /* FoodLogViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				F6C207FC2C27B71D0089F204 /* FilterChip.swift */,
 				F6C207F82C25EB160089F204 /* RecentFoodView.swift */,
 				F6C208052C27C09C0089F204 /* FoodCardView.swift */,
+				F6C208072C2819C50089F204 /* CharacterLogView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -207,17 +213,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C207F02C250E580089F204 /* FoodList.swift in Sources */,
+				F6C207F02C250E580089F204 /* FoodModel.swift in Sources */,
 				F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */,
 				F6C207E32C2442150089F204 /* MainView.swift in Sources */,
 				20B41A8C2C283D130042CE18 /* FoodModel.swift in Sources */,
 				F6C207F22C25264F0089F204 /* Home.swift in Sources */,
-				F6C208012C27BF110089F204 /* ChipViewModel.swift in Sources */,
+				F6C208012C27BF110089F204 /* FoodLogViewModel.swift in Sources */,
+				F6C779F22C28488A007DE87E /* FoodReview.swift in Sources */,
 				F6C207F52C25D01F0089F204 /* FoodLogging.swift in Sources */,
 				F6C207FD2C27B71D0089F204 /* FilterChip.swift in Sources */,
 				F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */,
 				20B41A892C283CB70042CE18 /* SeedData.swift in Sources */,
 				F6C208062C27C09C0089F204 /* FoodCardView.swift in Sources */,
+				F6C208082C2819C50089F204 /* CharacterLogView.swift in Sources */,
 				F6C207FB2C27B5FA0089F204 /* ChipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

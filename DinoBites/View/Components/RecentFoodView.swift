@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct RecentFoodView: View {
+    var name: String
+    var calorie: Int
+    var sugar: Float
+    var salt: Float
+    var fat: Float
+    var addFood: () -> Void
+
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Nasi Goreng")
+            Text(name)
                 .fontWeight(.bold)
             HStack {
-                HStack (spacing: 4){
+                HStack(spacing: 4) {
                     Circle()
                         .fill(.green)
                         .frame(width: 8, height: 8)
-                    Text("70 kcal")
+                    Text(String(calorie) + " kcal")
                         .fontWeight(.bold)
                         .font(.caption)
                 }
@@ -39,7 +46,7 @@ struct RecentFoodView: View {
 
                 Spacer()
 
-                Button(action: {}) {
+                Button(action: addFood) {
                     Image(systemName: "plus")
                         .font(.system(size: 14))
                         .foregroundStyle(.prime)
@@ -49,15 +56,16 @@ struct RecentFoodView: View {
                 }
             }
         }
+
         .padding(8)
         .overlay(
             RoundedRectangle(cornerRadius: 8.25)
-                .stroke(.gray, lineWidth: 1)
+                .stroke(.gray, lineWidth: 0.5)
         )
         .padding(.bottom, 10)
     }
 }
 
 #Preview {
-    RecentFoodView()
+    RecentFoodView(name: "Nasi Goreng", calorie: 350, sugar: 2, salt: 2, fat: 10, addFood: { print("hai") })
 }
