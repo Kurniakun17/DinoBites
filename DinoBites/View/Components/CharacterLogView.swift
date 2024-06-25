@@ -76,6 +76,7 @@ struct Love: View {
             .offset(x: CGFloat(offsetX), y: CGFloat(offsetY))
             .opacity(opacityVal)
             .scaleEffect(scaleVal)
+            
             .onAppear {
                 withAnimation(.spring(duration: 1.5)) {
                     offsetY = (.random(in: -11 ... -8) * 10)
@@ -89,5 +90,5 @@ struct Love: View {
 }
 
 #Preview {
-    CharacterLogView(mood: .constant(""))
+    CharacterLogView(mood: .constant("_love"))
 }

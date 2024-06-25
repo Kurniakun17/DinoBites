@@ -11,11 +11,10 @@ struct FoodLogging: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel = FoodLogViewModel()
     @State var filter = "Rekomendasi"
-    @State var selectedFood: [FoodModel] = []
+    @State var selectedFood: [FoodItem] = []
     @State var characterMood = ""
     @State var isCooldownActive = false
-    @State var calorieCount = 0
-
+    @State var calorieCount = Double(0)
     func updateCharacter() {
         if calorieCount > 500 {
             characterMood = "_overcal"
