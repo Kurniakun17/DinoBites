@@ -11,12 +11,10 @@ struct MainView: View {
     @State var coin = 200
 
     var body: some View {
-        TabView {
-            Home()
-                .tabItem {
-                    Label("Menu", systemImage: "house")
-                }
-        }
+        Home()
+            .tabItem {
+                Label("Menu", systemImage: "house")
+            }
     }
 }
 

@@ -39,9 +39,6 @@ struct FoodLogging: View {
         VStack(spacing: 0) {
             // Display Food Data
             VStack(spacing: 24) {
-                CharacterLogView(mood: $characterMood)
-                    .offset(x: -20)
-
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Vikri's Plate (\(String(selectedFood.count)) item)")

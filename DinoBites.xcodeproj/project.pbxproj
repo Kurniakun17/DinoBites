@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20B41A892C283CB70042CE18 /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B41A882C283CB70042CE18 /* SeedData.swift */; };
-		20B41A8C2C283D130042CE18 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B41A8B2C283D130042CE18 /* FoodModel.swift */; };
-		F639B92A2C29958D005CA774 /* HomeRevised.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639B9292C29958D005CA774 /* HomeRevised.swift */; };
+		20B41A892C283CB70042CE18 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		20B41A8C2C283D130042CE18 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		F639B92C2C299DFA005CA774 /* NutritionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639B92B2C299DFA005CA774 /* NutritionBar.swift */; };
+		F63FCAE12C2A613C00AF879E /* wave.metal in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE02C2A613C00AF879E /* wave.metal */; };
+		F63FCAE32C2A616900AF879E /* Test_Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE22C2A616900AF879E /* Test_Shader.swift */; };
+		F63FCAE52C2A6AEA00AF879E /* Love.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE42C2A6AEA00AF879E /* Love.swift */; };
+		F63FCAE72C2A72A200AF879E /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE62C2A72A200AF879E /* Wave.swift */; };
 		F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E02C2442150089F204 /* DinoBitesApp.swift */; };
 		F6C207E32C2442150089F204 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E22C2442150089F204 /* MainView.swift */; };
 		F6C207E52C2442170089F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E42C2442170089F204 /* Assets.xcassets */; };
@@ -23,14 +26,16 @@
 		F6C207FD2C27B71D0089F204 /* FilterChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207FC2C27B71D0089F204 /* FilterChip.swift */; };
 		F6C208012C27BF110089F204 /* FoodLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208002C27BF110089F204 /* FoodLogViewModel.swift */; };
 		F6C208062C27C09C0089F204 /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208052C27C09C0089F204 /* FoodCardView.swift */; };
-		F6C208082C2819C50089F204 /* CharacterLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C208072C2819C50089F204 /* CharacterLogView.swift */; };
 		F6C779F22C28488A007DE87E /* FoodReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C779F12C28488A007DE87E /* FoodReview.swift */; };
 		F6C779F42C291E06007DE87E /* SuccessLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C779F32C291E06007DE87E /* SuccessLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F639B9292C29958D005CA774 /* HomeRevised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRevised.swift; sourceTree = "<group>"; };
 		F639B92B2C299DFA005CA774 /* NutritionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionBar.swift; sourceTree = "<group>"; };
+		F63FCAE02C2A613C00AF879E /* wave.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = wave.metal; sourceTree = "<group>"; };
+		F63FCAE22C2A616900AF879E /* Test_Shader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Shader.swift; sourceTree = "<group>"; };
+		F63FCAE42C2A6AEA00AF879E /* Love.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love.swift; sourceTree = "<group>"; };
+		F63FCAE62C2A72A200AF879E /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		F6C207DD2C2442150089F204 /* DinoBites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoBites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C207E02C2442150089F204 /* DinoBitesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBitesApp.swift; sourceTree = "<group>"; };
 		F6C207E22C2442150089F204 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -44,7 +49,6 @@
 		F6C207FC2C27B71D0089F204 /* FilterChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChip.swift; sourceTree = "<group>"; };
 		F6C208002C27BF110089F204 /* FoodLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogViewModel.swift; sourceTree = "<group>"; };
 		F6C208052C27C09C0089F204 /* FoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
-		F6C208072C2819C50089F204 /* CharacterLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLogView.swift; sourceTree = "<group>"; };
 		F6C779F12C28488A007DE87E /* FoodReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReview.swift; sourceTree = "<group>"; };
 		F6C779F32C291E06007DE87E /* SuccessLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,9 +67,17 @@
 		20B41A872C283CA80042CE18 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				20B41A882C283CB70042CE18 /* SeedData.swift */,
+				F63FCADF2C2A612D00AF879E /* Metal */,
+				F63FCAE62C2A72A200AF879E /* Wave.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F63FCADF2C2A612D00AF879E /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Metal;
 			sourceTree = "<group>";
 		};
 		F6C207D42C2442150089F204 = {
@@ -87,6 +99,7 @@
 		F6C207DF2C2442150089F204 /* DinoBites */ = {
 			isa = PBXGroup;
 			children = (
+				F63FCAE02C2A613C00AF879E /* wave.metal */,
 				20B41A872C283CA80042CE18 /* Utilities */,
 				F6C207FE2C27BC320089F204 /* ViewModel */,
 				F6C207F32C25CFEB0089F204 /* View */,
@@ -112,7 +125,6 @@
 			children = (
 				F6C207EF2C250E580089F204 /* FoodModel.swift */,
 				F6C207FA2C27B5FA0089F204 /* ChipModel.swift */,
-				20B41A8B2C283D130042CE18 /* FoodModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,7 +136,7 @@
 				F6C207F12C25264F0089F204 /* Home.swift */,
 				F6C207F42C25D01F0089F204 /* FoodLogging.swift */,
 				F6C779F12C28488A007DE87E /* FoodReview.swift */,
-				F639B9292C29958D005CA774 /* HomeRevised.swift */,
+				F63FCAE22C2A616900AF879E /* Test_Shader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,9 +155,9 @@
 				F6C207FC2C27B71D0089F204 /* FilterChip.swift */,
 				F6C207F82C25EB160089F204 /* RecentFoodView.swift */,
 				F6C208052C27C09C0089F204 /* FoodCardView.swift */,
-				F6C208072C2819C50089F204 /* CharacterLogView.swift */,
 				F6C779F32C291E06007DE87E /* SuccessLog.swift */,
 				F639B92B2C299DFA005CA774 /* NutritionBar.swift */,
+				F63FCAE42C2A6AEA00AF879E /* Love.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,18 +236,20 @@
 				F639B92C2C299DFA005CA774 /* NutritionBar.swift in Sources */,
 				F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */,
 				F6C207E32C2442150089F204 /* MainView.swift in Sources */,
+				F63FCAE52C2A6AEA00AF879E /* Love.swift in Sources */,
+				F63FCAE32C2A616900AF879E /* Test_Shader.swift in Sources */,
+				F63FCAE12C2A613C00AF879E /* wave.metal in Sources */,
+				F63FCAE72C2A72A200AF879E /* Wave.swift in Sources */,
 				F6C779F42C291E06007DE87E /* SuccessLog.swift in Sources */,
-				20B41A8C2C283D130042CE18 /* FoodModel.swift in Sources */,
+				20B41A8C2C283D130042CE18 /* (null) in Sources */,
 				F6C207F22C25264F0089F204 /* Home.swift in Sources */,
 				F6C208012C27BF110089F204 /* FoodLogViewModel.swift in Sources */,
 				F6C779F22C28488A007DE87E /* FoodReview.swift in Sources */,
-				F639B92A2C29958D005CA774 /* HomeRevised.swift in Sources */,
 				F6C207F52C25D01F0089F204 /* FoodLogging.swift in Sources */,
 				F6C207FD2C27B71D0089F204 /* FilterChip.swift in Sources */,
 				F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */,
-				20B41A892C283CB70042CE18 /* SeedData.swift in Sources */,
+				20B41A892C283CB70042CE18 /* (null) in Sources */,
 				F6C208062C27C09C0089F204 /* FoodCardView.swift in Sources */,
-				F6C208082C2819C50089F204 /* CharacterLogView.swift in Sources */,
 				F6C207FB2C27B5FA0089F204 /* ChipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
