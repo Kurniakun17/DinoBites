@@ -12,11 +12,10 @@
 		3B3CB3082C2A5866005A69AA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3CB3072C2A5865005A69AA /* Profile.swift */; };
 		F639B92C2C299DFA005CA774 /* NutritionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639B92B2C299DFA005CA774 /* NutritionBar.swift */; };
 		F63FCAE12C2A613C00AF879E /* wave.metal in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE02C2A613C00AF879E /* wave.metal */; };
-		F63FCAE32C2A616900AF879E /* Test_Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE22C2A616900AF879E /* Test_Shader.swift */; };
 		F63FCAE52C2A6AEA00AF879E /* Love.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE42C2A6AEA00AF879E /* Love.swift */; };
 		F63FCAE72C2A72A200AF879E /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FCAE62C2A72A200AF879E /* Wave.swift */; };
-		F6890E8B2C2B04890042C151 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6890E8A2C2B04890042C151 /* Home.swift */; };
 		F6890E8D2C2B04B30042C151 /* FoodLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6890E8C2C2B04B30042C151 /* FoodLogging.swift */; };
+		F6890E8E2C2B06310042C151 /* DinoBites.app in Resources */ = {isa = PBXBuildFile; fileRef = F6C207DD2C2442150089F204 /* DinoBites.app */; };
 		F6C207E12C2442150089F204 /* DinoBitesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E02C2442150089F204 /* DinoBitesApp.swift */; };
 		F6C207E32C2442150089F204 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C207E22C2442150089F204 /* MainView.swift */; };
 		F6C207E52C2442170089F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C207E42C2442170089F204 /* Assets.xcassets */; };
@@ -34,7 +33,6 @@
 		3B3CB3072C2A5865005A69AA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F639B92B2C299DFA005CA774 /* NutritionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionBar.swift; sourceTree = "<group>"; };
 		F63FCAE02C2A613C00AF879E /* wave.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = wave.metal; sourceTree = "<group>"; };
-		F63FCAE22C2A616900AF879E /* Test_Shader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Shader.swift; sourceTree = "<group>"; };
 		F63FCAE42C2A6AEA00AF879E /* Love.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Love.swift; sourceTree = "<group>"; };
 		F63FCAE62C2A72A200AF879E /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		F6890E8A2C2B04890042C151 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		F6890E892C2B038E0042C151 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				F63FCAE22C2A616900AF879E /* Test_Shader.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -245,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C207E82C2442170089F204 /* Preview Assets.xcassets in Resources */,
+				F6890E8E2C2B06310042C151 /* DinoBites.app in Resources */,
 				F6C207E52C2442170089F204 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,9 +258,7 @@
 				F639B92C2C299DFA005CA774 /* NutritionBar.swift in Sources */,
 				F6C207F92C25EB160089F204 /* RecentFoodView.swift in Sources */,
 				F6C207E32C2442150089F204 /* MainView.swift in Sources */,
-				F6890E8B2C2B04890042C151 /* Home.swift in Sources */,
 				F63FCAE52C2A6AEA00AF879E /* Love.swift in Sources */,
-				F63FCAE32C2A616900AF879E /* Test_Shader.swift in Sources */,
 				F6890E8D2C2B04B30042C151 /* FoodLogging.swift in Sources */,
 				F63FCAE12C2A613C00AF879E /* wave.metal in Sources */,
 				F63FCAE72C2A72A200AF879E /* Wave.swift in Sources */,
@@ -333,6 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "AppName/SupportingFiles/Info.plist\n\nAppName/SupportingFiles/Info.plist\n\nDinoBites/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -414,8 +411,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,8 +441,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
