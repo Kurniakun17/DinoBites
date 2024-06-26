@@ -25,11 +25,11 @@ struct Profile: View {
             
             ZStack {
                 Rectangle()
-                   .foregroundColor(.clear)
-                   .frame(width: .infinity)
-                   .background(.white)
-                   .cornerRadius(30)
-                   .offset(y: -30)
+                    .foregroundColor(.clear)
+                    .frame(width: .infinity)
+                    .background(.white)
+                    .cornerRadius(30)
+                    .offset(y: -30)
                 
                 Image("frame1")
                     .offset(y:-90)
